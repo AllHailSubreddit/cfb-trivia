@@ -9,19 +9,19 @@ users to play for our team.
 Build the image.
   
 ```shell script
-docker build -t cfb-trivia .
+docker build -t cfb-trivia-tuesday .
 ```
 
 Run the image.
   
 ```shell script
-docker run --env-file .env cfb-trivia
+docker run --env-file .env cfb-trivia-tuesday
 ```
 
 For more readable output, filter the output through the `pino-pretty` package.
 
 ```shell script
-docker run --env-file .env cfb-trivia | npx pino-pretty
+docker run --env-file .env cfb-trivia-tuesday | npx pino-pretty
 ```
 
 ## Environment variables
