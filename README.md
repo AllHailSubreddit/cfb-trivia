@@ -30,7 +30,7 @@ docker run --env-file .env cfb-trivia | npx pino-pretty
 The client ID provided by Reddit for your application.
 - **CLIENT_SECRET**  
 The client secret provided by Reddit for your application.
-- **LOG_LEVEL**
+- **LOG_LEVEL**  
 Determines the severity of data logged. Possible values are "error", "warn",
 "info", "debug", and "trace".
 - **PASSWORD**  
