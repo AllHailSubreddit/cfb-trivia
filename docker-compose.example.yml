@@ -1,0 +1,10 @@
+# Example docker-compose file for running this docker container with various options.
+# 1. Update the options to suit your needs
+# 2. Place the file somewhere like /etc/opt/cfb-trivia-tuesday/ or ~/
+version: "3"
+services:
+  cfb-trivia-tuesday:
+    image: allhail/cfb-trivia-tuesday:latest
+    env_file: .env
+    volumes:
+      - /var/log/cfb-trivia-tuesday.log:/var/log/app.log

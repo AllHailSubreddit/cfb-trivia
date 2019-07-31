@@ -1,0 +1,15 @@
+# Example logrotate file to manage log files produced by this cron job.
+# 1. Update the options to suit your needs
+# 2. Place in /etc/logrotate.d/
+# 3. Change the owner to root
+# 4. Change the permissions to 0644
+
+/var/log/allhailbot/*.log {
+  rotate 4
+  size 100k
+  copytruncate
+  compress
+  delaycompress
+  missingok
+  notifempty
+}
