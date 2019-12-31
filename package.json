@@ -1,22 +1,19 @@
 {
-  "name": "allhailbot",
+  "name": "cfb-trivia",
   "version": "1.0.0",
-  "license": "MIT",
+  "author": "/u/pushECX",
   "private": true,
-  "scripts": {
-    "lint": "eslint .",
-    "pre-push": "npm run lint"
-  },
+  "scripts": {},
   "devDependencies": {
-    "eslint": "6.1.0",
-    "eslint-config-prettier": "6.0.0",
-    "eslint-plugin-prettier": "3.1.0",
-    "husky": "3.0.2",
-    "pino-pretty": "3.2.0",
-    "prettier": "1.18.2"
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.9.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "3.1.0",
+    "prettier": "1.19.1"
   },
   "dependencies": {
-    "pino": "5.13.1",
-    "snoowrap": "1.18.0"
+    "dotenv": "8.2.0",
+    "pino": "5.15.0",
+    "snoowrap": "1.20.1"
   }
 }

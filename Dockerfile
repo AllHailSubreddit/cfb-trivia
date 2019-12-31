@@ -1,5 +1,9 @@
-FROM node:12.7.0-alpine
+FROM node:12.13.1-alpine
 WORKDIR /opt/app
-COPY package*.json index.js ./
+ENV NODE_ENV production
+COPY package*.json ./
 RUN npm ci --only=production
-CMD node index.js >> /var/log/app.log 2>&1
+COPY --chown=node:node index.js ./
+USER node
+CMD ["index"]
+

@@ -1,0 +1,12 @@
+[Unit]
+Description=Encourages users to play the latest /r/CFB trivia
+Documentation=https://github.com/AllHailSubreddit/cfb-trivia/
+After=docker.service
+Requires=docker.service
+
+[Service]
+WorkingDirectory=/etc/opt/allhail/cfb-trivia
+ExecStart=/usr/bin/docker run --name allhail_cfb-trivia \
+                              --env-file .env \
+                              --rm \
+                              allhail/cfb-trivia:latest
